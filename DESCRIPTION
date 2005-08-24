@@ -1,0 +1,11 @@
+Package: timecourse
+Version: 1.0.0
+Date: 2005-8-18
+Title: Statistical Analysis for Developmental Microarray Time Course Data
+Author: Yu Chuan Tai 
+Maintainer: Yu Chuan Tai <yuchuan@stat.Berkeley.edu> 
+Depends: R (>= 2.1.1), limma (>= 1.8.6), MASS, Biobase 
+Description: Functions for data analysis and graphical displays for developmental microarray time course data.
+License: LGPL 
+URL: http:none
+Packaged: Mon Feb 28 17:57:04 2005; yuchuan
