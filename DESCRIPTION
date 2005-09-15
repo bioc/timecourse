@@ -9,3 +9,4 @@ Description: Functions for data analysis and graphical displays for developmenta
 License: LGPL 
 URL: http:none
 Packaged: Mon Feb 28 17:57:04 2005; yuchuan
+biocViews:  Microarray, TimeCourse
