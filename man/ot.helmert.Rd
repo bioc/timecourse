@@ -19,6 +19,6 @@ This function is for internal use only and is not to be called by the user.
 
 
 \author{Yu Chuan Tai \email{yuchuan@stat.berkeley.edu}}
-\keyword{internal}
+\keyword{array}
 
 
