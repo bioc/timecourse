@@ -41,19 +41,19 @@ Division of Biostatistics, University of California, Berkeley, CA 94720, USA. \\
 
 The {\tt timecourse} package aims to serve as
 a comprehensive library for the analysis of developmental microarray time course data. 
-Version 1.0.0 includes functions for identifying genes of interest from 
+Version 1.2.1 includes functions for identifying genes of interest from 
 longitudinal replicated developmental microarray time course experiments with one or more biological 
 conditions.
 The main functions are {\bf mb.long()} and {\bf mb.MANOVA()}. 
 They calculate the $MB$-statistics and/or
-$\widetilde{T}^2$ statistics derived in \cite{Tai2004} and 
+$\widetilde{T}^2$ statistics derived in \cite{TaiSpeed2005} and 
 \cite{Taithesis2005}, using multivariate 
 empirical Bayes 
 approaches. The input object for {\bf mb.long()} and {\bf mb.MANOVA()}
 can be a {\tt matrix}, {\tt MAList}, {\tt marrayNorm}, 
 or {\tt exprSet}, containing properly preprocessed $log_2$ expression values or ratios.
 \par
-The multivariate empirical Bayes models proposed in \cite{Tai2004}
+The multivariate empirical Bayes models proposed in \cite{TaiSpeed2005}
 and \cite{Taithesis2005} 
 have the advantage over the traditional $F$-statistic in that they 
 incorporate
@@ -61,7 +61,7 @@ replicate variances, the correlations among gene expression time point samples f
 and moderation borrowing
 the information across genes into the analysis to reduce the numbers of false positives and false
 negatives induced by those poorly estimated variance-covariance matrices.
-Please see \cite{Tai2004}, \cite{Tai2005}, and \cite{Taithesis2005} for more details.  
+Please see \cite{TaiSpeed2005}, \cite{Tai2005}, and \cite{Taithesis2005} for more details.  
 The results from {\bf mb.long()} and {\bf mb.MANOVA()}
 are stored in a list object of class {\tt MArrayTC}, 
 which contains various useful information and is used as the input object
