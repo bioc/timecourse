@@ -8,5 +8,4 @@ Depends: R (>= 2.1.1), limma (>= 1.8.6), MASS, Biobase, methods
 Description: Functions for data analysis and graphical displays for developmental microarray time course data.
 License: LGPL 
 URL: http://www.stat.berkeley.edu/~terry/Group/research/timecourse.html
-Packaged: Mon Feb 28 17:57:04 2005; yuchuan
 biocViews:  Microarray, TimeCourse
