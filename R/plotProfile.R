@@ -128,11 +128,9 @@ function (object, stats = c("HotellingT2", "MB"), ranking = 1,
             for (i in 1:length(both)) {
                 for (j in 1:nrow(con)) {
                   if (con[j, 2] == both[i] & !is.na(con[j, 2])) 
-                    rep.pch[j, 2] <- rep.pch[as.numeric(con[, 
-                      1]) == as.numeric(both[i]), 1]
-                  if (con[j, 2] == both[i] & !is.na(con[j, 2])) 
-                    rep.lty[j, 2] <- rep.lty[as.numeric(con[, 
-                      1]) == as.numeric(both[i]), 1]
+                    rep.pch[j, 2] <- rep.pch[con[, 1]  == both[i],1]   ###rep.pch[as.numeric(con[, 1]) == as.numeric(both[i]), 1]
+                 ### if (con[j, 2] == both[i] & !is.na(con[j, 2])) 
+                 ###   rep.lty[j, 2] <-        ###rep.lty[as.numeric(con[, 1]) == as.numeric(both[i]), 1]
                 }
             }
         }
