@@ -179,8 +179,7 @@ T2.only=TRUE)
      HotellingT2 <- sapply(1:G, function(x) mn[x,1]*t(xbar[,x])%*%solve(matrix(modS[,x],ncol=k))%*%xbar[,x])
 
      if(!is.null(eta) & (T2.only==FALSE))
-         HotellingT2 <- sapply(1:G, function(x)
-                n[x]*t(T1%*%xbar[,x])%*%solve(matrix(modS1[,x],ncol=k-1))%*%T1%*%xbar[,x])
+         HotellingT2 <- sapply(1:G, function(x) mn[x,1]*t(xbar[,x])%*%solve(matrix(modS[,x],ncol=k))%*%xbar[,x])
    }
    if(is.infinite(nu))
    {
@@ -197,8 +196,7 @@ T2.only=TRUE)
         mn[x,1]*t(xbar[,x])%*%solve(matrix(modS[,x],ncol=k))%*%xbar[,x])
 
      if(!is.null(eta) & (T2.only==FALSE))
-         HotellingT2 <- sapply(1:G, function(x)
-                n[x]*t(T1%*%xbar[,x])%*%solve(matrix(modS1[,x],ncol=k-1))%*%T1%*%xbar[,x])
+         HotellingT2 <- sapply(1:G, function(x) mn[x,1]*t(xbar[,x])%*%solve(matrix(modS[,x],ncol=k))%*%xbar[,x])
    }
    if(nu < tol & nu >=0)           
    {
@@ -215,8 +213,8 @@ T2.only=TRUE)
      mn[x,1]*t(xbar[,x])%*%ginv(matrix(modS[,x],ncol=k))%*%xbar[,x])
 
      if(!is.null(eta) & (T2.only==FALSE))
-         HotellingT2 <- sapply(1:G, function(x)
-                n[x]*t(T1%*%xbar[,x])%*%solve(matrix(modS1[,x],ncol=k-1))%*%T1%*%xbar[,x])
+         HotellingT2 <- sapply(1:G, function(x) mn[x,1]*t(xbar[,x])%*%ginv(matrix(modS[,x],ncol=k))%*%xbar[,x])
+
    }
 
    # HotellingT2 does not require eta

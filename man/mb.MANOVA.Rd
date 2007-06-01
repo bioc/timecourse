@@ -62,7 +62,7 @@ Ph.D. dissertation. Division of Biostatistics, University of California, Berkele
 
 Yu Chuan Tai and Terence P. Speed (2005). Statistical analysis of microarray time course data. In: DNA 
 Microarrays, U. Nuber (ed.), BIOS Scientific Publishers Limited, Taylor & Francis, 4 Park Square, Milton 
-Park, Abingdon OX14 4RN, Chapter 20. \emph{In press}.
+Park, Abingdon OX14 4RN, Chapter 20. 
 }
 \examples{
 

@@ -102,13 +102,13 @@ timecourse Vignette.
 }
 \author{Yu Chuan Tai  \email{yuchuan@stat.berkeley.edu}}
 \references{
-Yu Chuan Tai and Terence P. Speed (2004). A multivariate empirical Bayes statistic
-for replicated microarray time course data. Technical Report no. 667,
-Department of Statistics, University of California, Berkeley. 
+Yu Chuan Tai and Terence P. Speed (2006). A multivariate empirical Bayes statistic
+for replicated microarray time course data. Annals of Statistics 34(5):2387-2412. 
 
 Yu Chuan Tai and Terence P. Speed (2005). Statistical analysis of microarray time course data. In: DNA 
 Microarrays, U. Nuber (ed.), BIOS Scientific Publishers Limited, Taylor & Francis, 4 Park Square, Milton 
-Park, Abingdon OX14 4RN, Chapter 20. \emph{In press}.
+Park, Abingdon OX14 4RN, Chapter 20. 
+
 
 P. J. Huber (2004). Robust Statistics. 
 \emph{Wiley series in probability and mathematical statistics}.
