@@ -28,8 +28,8 @@
 \maketitle
 
 \begin{center}
-Division of Biostatistics, University of California, Berkeley, CA 94720, USA. \\ 
-{\tt yuchuan@stat.berkeley.edu}
+Institute for Human Genetics, University of California, San Francisco \\ 
+{\tt taiy@humgen.ucsf.edu}
 \end{center}
 
 \tableofcontents
@@ -41,7 +41,7 @@ Division of Biostatistics, University of California, Berkeley, CA 94720, USA. \\
 
 The {\tt timecourse} package aims to serve as
 a comprehensive library for the analysis of developmental microarray time course data. 
-Version 1.2.1 includes functions for identifying genes of interest from 
+The current version includes functions for identifying genes of interest from 
 longitudinal replicated developmental microarray time course experiments with one or more biological 
 conditions.
 The main functions are {\bf mb.long()} and {\bf mb.MANOVA()}. 
