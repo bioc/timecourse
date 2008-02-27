@@ -22,10 +22,10 @@ T2.only=TRUE)
           desc <- object@maGnames@maLabels
     }
 
-    if (is(object, "exprSet"))
+    if (is(object, "ExpressionSet"))
     {
-                M <- object@exprs
-                geneNames <- rownames(M)       
+          M <- exprs(object)
+          geneNames <- rownames(M)       
     }
 
      if (is.null(M))
@@ -303,6 +303,3 @@ T2.only=TRUE)
    new("MArrayTC", res)
 
 }
- 
-
-

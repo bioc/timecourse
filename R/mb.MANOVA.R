@@ -13,8 +13,8 @@ function (object, times, D, size, nu = NULL, Lambda = NULL, beta.d = NULL,
         geneNames <- rownames(M)
         desc <- object@maGnames@maLabels
     }
-    if (is(object, "exprSet")) {
-        M <- object@exprs
+    if (is(object, "ExpressionSet")) {
+        M <- exprs(object)
         geneNames <- rownames(M)
     }
     if (is.null(M)) 

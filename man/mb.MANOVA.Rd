@@ -12,7 +12,7 @@ condition.grp, time.grp = NULL, rep.grp = NULL, p = 0.02)
 }
 \arguments{
   \item{object}{Required. An object of class \code{matrix}, \code{MAList},
-    \code{marrayNorm}, or \code{exprSet} containing log-ratios or
+    \code{marrayNorm}, or \code{ExpressionSet} containing log-ratios or
     log-values of expression for a series of microarrays.} 
   \item{times}{Required. A positive integer giving the number of time points.}
   \item{D}{Required. A positive integer giving the number of biological conditions. \code{D>1}}
@@ -25,7 +25,8 @@ Lambda.}
    moderated Wilks' Lambda.}
   \item{beta.d}{an optional numeric vector of length \code{D} giving the condition-specific scale 
 parameters for the common covariance matrix of the expected time course vectors under the alternative.}
-  \item{beta}{an optional numeric value giving the scale parameter for the common covariance matrix of the common expected time course vector under the null.}
+  \item{beta}{an optional numeric value giving the scale parameter for the common covariance matrix of
+  the common expected time course vector under the null.}
   \item{alpha.d}{an optional numeric matrix giving the condition-specific means of the expected
   time course vectors under the alternative.}
   \item{alpha}{an optional numeric vector of length \code{times} giving the common mean of the 
@@ -51,7 +52,6 @@ Object of \code{MArrayTC}.
   as described in Tai (2005).  
   
 }
-
 \seealso{
 timecourse Vignette.
 }
@@ -66,13 +66,11 @@ Park, Abingdon OX14 4RN, Chapter 20.
 }
 \examples{
 
-
 SS <- matrix(c(    0.01, -0.0008,   -0.003,     0.007,  0.002,
                 -0.0008,    0.02,    0.002,   -0.0004, -0.001,
                  -0.003,   0.002,     0.03,   -0.0054, -0.009,
                   0.007, -0.0004, -0.00538,      0.02, 0.0008,
                   0.002,  -0.001,   -0.009,    0.0008,  0.07), ncol=5)
-
 
 sim.Sigma <- function()
 {

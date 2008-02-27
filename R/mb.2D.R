@@ -21,11 +21,10 @@ mn.grp=NULL, r=FALSE, vec=FALSE, d=NULL, prop=0.02, T2.only=TRUE)
           desc <- object@maGnames@maLabels
     }
 
-    if (is(object, "exprSet"))
+    if (is(object, "ExpressionSet"))
     {
-                M <- object@exprs
-                geneNames <- rownames(M)               
-                #desc <- object@rownames(M)
+          M <- exprs(object)
+          geneNames <- rownames(M)               
     }
 
             
@@ -270,6 +269,3 @@ mn.grp=NULL, r=FALSE, vec=FALSE, d=NULL, prop=0.02, T2.only=TRUE)
 
 
 }
- 
-
-

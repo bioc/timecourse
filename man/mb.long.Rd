@@ -19,7 +19,7 @@ tuning = 1.345, HotellingT2.only=TRUE)
 }
 \arguments{
   \item{object}{Required. An object of class \code{matrix}, \code{MAList},
-    \code{marrayNorm}, or \code{exprSet} containing log-ratios or
+    \code{marrayNorm}, or \code{ExpressionSet} containing log-ratios or
     log-values of expression for a series of microarrays.}
   \item{method}{a character string, \code{"1D"} for the one-sample case where genes
                 of interest are those which change over time,  
@@ -34,7 +34,7 @@ tuning = 1.345, HotellingT2.only=TRUE)
   \item{times}{Required. A positive integer giving the number of time points.}
   \item{reps}{Required. A numeric vector or matrix corresponding to the sample sizes for all 
           genes across different biological conditions, when biological conditions are sorted in 
-          ascending order. If a matrix, rows represent genes while columns represent biological conditions. }
+          ascending order. If a matrix, rows represent genes while columns represent biological conditions.}
   \item{prior.df}{an optional positive value giving the degrees of moderation.}  
   \item{prior.COV}{an optional numeric matrix giving the common covariance matrix
     to which the gene-specific sample covariances are smoothed toward.}  
@@ -60,23 +60,19 @@ tuning = 1.345, HotellingT2.only=TRUE)
   \item{tuning}{the tuning constant for the Huber weight function with a default 1.345.}
   \item{HotellingT2.only}{logical. Should only the HotellingT2 statistics be outputed? This should be 
 set as \code{TRUE} (default) when the sample size(s) are the same across genes, in order to reduce
-computational time. }
+computational time.}
 }
 \value{
-
 Object of \code{MArrayTC}.
-  
 }
 \details{
   This function implements the multivariate empirical Bayes statistics
   described in Tai and Speed (2004), to rank genes in the order of
   interest from longitudinal replicated developmental microarray time course
   experiments. It calls one of the following functions, 
-  depending
-  on which \code{method} is used: \code{mb.1D}, 
+  depending on which \code{method} is used: \code{mb.1D}, 
   \code{mb.paired}, and \code{mb.2D}.
 
-  
   The arguments \code{condition.grp}, \code{rep.grp}, and
   \code{time.grp}, if specified, should have lengths equal to the number
   of arrays. The \eqn{i_th} elements of these three arguments should
@@ -93,10 +89,9 @@ Object of \code{MArrayTC}.
 
   Warning: When there are only 2 replicates within conditions,
            \code{type="robust"} produces the same rankings as \code{type="none"} 
-           since there is no concensus on gene expression values. 
+           since there is no consensus on gene expression values. 
            Check the output weights for these outliers.   
 }
-
 \seealso{
 timecourse Vignette.
 }
@@ -108,7 +103,6 @@ for replicated microarray time course data. Annals of Statistics 34(5):2387-2412
 Yu Chuan Tai and Terence P. Speed (2005). Statistical analysis of microarray time course data. In: DNA 
 Microarrays, U. Nuber (ed.), BIOS Scientific Publishers Limited, Taylor & Francis, 4 Park Square, Milton 
 Park, Abingdon OX14 4RN, Chapter 20. 
-
 
 P. J. Huber (2004). Robust Statistics. 
 \emph{Wiley series in probability and mathematical statistics}.
@@ -133,13 +127,11 @@ plotProfile(out1, type="b", gnames=gnames, legloc=c(2,15), pch=c("A","B","C"), x
 ## one biological condition, 5 time points, 3 replicates
 ## 500 genes, 10 genes change over time
 
-
 SS <- matrix(c(    0.01, -0.0008,   -0.003,     0.007,  0.002,
                 -0.0008,    0.02,    0.002,   -0.0004, -0.001,
                  -0.003,   0.002,     0.03,   -0.0054, -0.009,
                   0.007, -0.0004, -0.00538,      0.02, 0.0008,
                   0.002,  -0.001,   -0.009,    0.0008,  0.07), ncol=5)
-
 
 sim.Sigma <- function()
 {

@@ -51,7 +51,7 @@ $\widetilde{T}^2$ statistics derived in \cite{TaiSpeed2006} and
 empirical Bayes 
 approaches. The input object for {\bf mb.long()} and {\bf mb.MANOVA()}
 can be a {\tt matrix}, {\tt MAList}, {\tt marrayNorm}, 
-or {\tt exprSet}, containing properly preprocessed $log_2$ expression values or ratios.
+or {\tt ExpressionSet}, containing properly preprocessed $log_2$ expression values or ratios.
 \par
 The multivariate empirical Bayes models proposed in \cite{TaiSpeed2006}
 and \cite{Taithesis2005} 
@@ -95,8 +95,7 @@ experiment
 at different time points may approximate a longitudinal study.
 Therefore, we treat this dataset as longitudinal and proceed with the
 one-sample statistic calculated from {\bf mb.long()}.
- 
- 
+
 The dataset has been preprocessed using RMA algorithm \citep{Irizarry2003, Bolstad2003} 
 and $log_2$ expression values
 were extracted from the RMA output. To reduce the computational time, 
