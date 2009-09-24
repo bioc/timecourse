@@ -31,10 +31,12 @@ ylab="Expression", legloc=NULL, xlim=NULL, ylim=NULL, cex.main=1,...)
 }
 
 \details{
-This function takes an object of \code{MArrayTC} as the input and plots the temporal profile of a single gene.
-The user can specify either the ranking based on \code{stats} or the gene ID of the gene to be plotted.  
+This function takes an object of \code{MArrayTC} as the input and plots
+the temporal profile of a single gene. The user can specify either the
+ranking based on \code{stats} or the gene ID of the gene to be plotted.   
 
-See \code{\link[base]{points}} for possible values for \code{pch}, \code{col} and \code{cex}.
+See \code{\link[graphics]{points}} for possible values for \code{pch},
+\code{col} and \code{cex}. 
 
 See \code{mb.long} for examples.
 }
