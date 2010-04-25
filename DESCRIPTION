@@ -4,7 +4,8 @@ Date: 2007-6-3
 Title: Statistical Analysis for Developmental Microarray Time Course Data
 Author: Yu Chuan Tai 
 Maintainer: Yu Chuan Tai <yuchuan@stat.berkeley.edu> 
-Depends: R (>= 2.1.1), limma (>= 1.8.6), MASS, Biobase, methods 
+Depends: R (>= 2.1.1), MASS, methods
+Imports: Biobase, graphics, limma (>= 1.8.6), MASS, marray, methods, stats
 Description: Functions for data analysis and graphical displays for developmental microarray time course data.
 License: LGPL 
 URL: http://www.bioconductor.org

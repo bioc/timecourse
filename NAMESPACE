@@ -1,0 +1,16 @@
+imports(methods)
+importFrom(methods, is, new)
+
+importClassesFrom(Biobase, ExpressionSet, eSet, Versioned, VersionedBiobase)
+importMethodsFrom(Biobase, exprs)
+importFrom(Biobase, addVigs2WinMenu)
+importFrom(graphics, legend, lines, mtext, plot)
+importClassesFrom(limma, MAList)
+importFrom(limma, squeezeVar, tmixture.matrix)
+importClassesFrom(marray, marrayNorm)
+importFrom(MASS, ginv)
+importFrom(stats, cov, dist, median)
+
+exportClasses(MArrayTC, LargeDataObject)
+export(abs2ratio, matrix.cov, mb.1D, mb.2D, mb.long, mb.MANOVA, mb.paired,
+       ot.helmert, plotProfile, univ.func)
