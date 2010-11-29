@@ -1,5 +1,4 @@
-imports(methods)
-importFrom(methods, is, new)
+import(methods)
 
 importClassesFrom(Biobase, ExpressionSet, eSet, Versioned, VersionedBiobase)
 importMethodsFrom(Biobase, exprs)
